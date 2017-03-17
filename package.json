@@ -1,9 +1,27 @@
 {
-  "name": "koa-dingtalk-webhook",
-  "version": "0.1.0",
-  "description": "Koa app and middleware - Dingtalk webhook for unofficial support service",
-  "main": "index.js",
-  "repository": "https://github.com/cncolder/koa-dingtalk-webhook.git",
-  "author": "colder <colder@vitarn.com>",
-  "license": "MIT"
+    "name": "koa-dingtalk-webhook",
+    "version": "0.1.0",
+    "description": "Koa app and middleware - Dingtalk webhook for unofficial support service",
+    "main": "lib",
+    "repository": "https://github.com/cncolder/koa-dingtalk-webhook.git",
+    "author": "colder <colder@vitarn.com>",
+    "license": "MIT",
+    "engines": {
+        "node": ">=7.6"
+    },
+    "scripts": {
+        "start": "node .",
+        "test": "NODE_ENV=test ava -w",
+        "release": "yarn version --no-git-tag-version && EDITOR=vim git release `node -e \"console.log(require('./package').version)\"` -c"
+    },
+    "devDependencies": {
+        "koa": "^2.2.0",
+        "koa-json-body": "^5.3.0"
+    },
+    "dependencies": {
+        "node-fetch": "^1.6.3"
+    },
+    "files": [
+        "lib"
+    ]
 }
