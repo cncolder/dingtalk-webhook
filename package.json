@@ -1,0 +1,9 @@
+{
+  "name": "koa-dingtalk-webhook",
+  "version": "0.1.0",
+  "description": "Koa app and middleware - Dingtalk webhook for unofficial support service",
+  "main": "index.js",
+  "repository": "https://github.com/cncolder/koa-dingtalk-webhook.git",
+  "author": "colder <colder@vitarn.com>",
+  "license": "MIT"
+}
