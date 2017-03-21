@@ -12,7 +12,7 @@
     "scripts": {
         "start": "node .",
         "test": "NODE_ENV=test ava -w",
-        "release": "yarn version --no-git-tag-version && EDITOR=vim git release `node -e \"console.log(require('./package').version)\"` -c"
+        "release": "yarn version --no-git-tag-version && EDITOR=vim git release `node -e \"console.log('v'+require('./package').version)\"` -c"
     },
     "devDependencies": {
         "koa": "^2.2.0",
