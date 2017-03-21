@@ -1,6 +1,6 @@
 {
     "name": "koa-dingtalk-webhook",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Koa app and middleware - Dingtalk webhook for unofficial support service",
     "main": "lib",
     "repository": "https://github.com/cncolder/koa-dingtalk-webhook.git",
